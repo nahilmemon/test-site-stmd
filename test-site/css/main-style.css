@@ -1,0 +1,212 @@
+/* Make everything a border-box*/
+* {
+  box-sizing: border-box;
+}
+
+/* Typography */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size-adjust: 0.5;
+}
+
+body {
+  font: 1em/1.25 "Alegreya Sans", Verdana, sans-serif;
+  background-color: #001f3f;
+  color: #86dbc2;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+h1 {
+  font: 2em/1.25 "Alegreya SC";
+}
+
+h2 {
+  font: 1.625em/1.15384615 "Alegreya SC";
+}
+
+h3 {
+  font: 1.375em/1.13636364 "Alegreya Sans SC";
+}
+
+h4 {
+  font: 1.125em/1.11111111 "Alegreya Sans SC";
+}
+
+blockquote {
+  font-size: 1.25em;
+  line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1em;
+    line-height: 1.375;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.125;
+  }
+
+  h2 {
+    font-size: 2em;
+    line-height: 1.25;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+
+  h4 {
+    line-height: 1.22222222;
+  }
+
+  blockquote {
+    font-size: 1.5em;
+    line-height: 1.45833333;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 3em;
+    line-height: 1.05;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.25;
+  }
+
+  h3 {
+    font-size: 1.75em;
+    line-height: 1.25;
+  }
+}
+
+a,
+blockquote,
+figcaption {
+  color: #ffe37f;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ff7f9b;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+/* Images */
+img {
+  max-height: 95vh;
+}
+
+figure {
+  text-align: center;
+}
+
+/* Header */
+.border-bottom-divider {
+  border-bottom: 2px solid #ffe37f;
+}
+
+#logo {
+  stroke: #86dbc2;
+  fill: none;
+  stroke-miterlimit: 10;
+  stroke-width: 5px;
+  height: calc(2em*1.25 + 1.125em*1.11111111 - 4px);
+}
+
+@media screen and (min-width: 768px) {
+  #logo {
+    height: calc(2.5em*1.125 + 1.125em*1.22222222 - 6px);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #logo {
+    height: calc(3em*1.05 + 1.125em*1.22222222 - 6px);
+  }
+}
+
+/* Modal */
+.modal-content {
+  background-color: #001f3f;
+}
+
+.modal-header {
+  border-bottom-color: #ffe37f;
+}
+
+.modal-footer {
+  border-top-color: #ffe37f;
+}
+
+.close {
+  color: #ffe37f;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .75;
+}
+
+.close:hover,
+.close:focus {
+  color: #ffe37f;
+  opacity: 1;
+}
+
+/* Buttons */
+.btn-outline-tertiary {
+  color: #ffe37f;
+  background-color: transparent;
+  background-image: none;
+  border-color: #ffe37f;
+}
+
+.btn-outline-tertiary:hover {
+  color: #001f3f;
+  background-color: #ffe37f;
+  border-color: #ffe37f;
+}
+
+.btn-outline-tertiary:focus,
+.btn-outline-tertiary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+
+.btn-outline-tertiary.disabled,
+.btn-outline-tertiary:disabled {
+  color: #000;
+  background-color: transparent;
+}
+
+.btn-outline-tertiary:not(:disabled):not(.disabled):active,
+.btn-outline-tertiary:not(:disabled):not(.disabled).active,
+.show > .btn-outline-tertiary.dropdown-toggle {
+  color: #001f3f;
+  background-color: #ffe37f;
+  border-color: #ffe37f;
+}
+
+.btn-outline-tertiary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-tertiary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-tertiary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 991px) {
+  .btn {
+    min-width: 48px;
+    padding: 0.75rem;
+  }
+}

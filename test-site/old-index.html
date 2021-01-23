@@ -1,0 +1,921 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Make sure that special characters show up correctly. -->
+  <meta charset="utf-8">
+  <!-- Tell the browser how to display the page initially when it loads on a mobile device. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Tell Internet Explorer to use the best engine you've got and give the user the most up to date experience. -->
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Google Fonts -->
+  <!-- Alegreya SC for large headings -->
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
+  <!-- Alegreya Sans SC for small headings -->
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,700" rel="stylesheet">
+  <!-- Alegreya Sans for body text -->
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i" rel="stylesheet">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/main-style.css">
+
+  <!-- Title -->
+  <title>Nahil's Portfolio</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="container-fluid pb-1 mt-2 mb-3 border-bottom-divider">
+    <div class="row">
+      <!-- Logo -->
+      <div class="col-3 mt-2">
+        <svg id="logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45.5 55">
+          <polyline points="0 0.5 45 0.5 45 54.5 0 54.5"/>
+          <line x1="18" y1="54.5" x2="18" y2="0.5"/>
+          <line x1="18" y1="27.5" x2="45" y2="27.5"/>
+        </svg>
+      </div>
+      <!-- Name and Profession -->
+      <div class="col-9 text-right">
+        <!-- Name -->
+        <h1>Test Site</h1>
+        <!-- Profession -->
+        <h4>For STMD</h4>
+      </div>
+    </div>
+  </header>
+
+  <!-- Big Widescreen Image -->
+  <!-- Featured Works Section -->
+  <section class="jumbotron jumbotron-fluid p-0 mb-3">
+    <!-- Section heading to display on screen readers only -->
+    <h2 class="sr-only">Banner Image: Desk of a Person Planning a Website Design</h2>
+    <!-- Feature Image -->
+    <picture>
+      <source
+        media="(max-width: 575px)"
+        srcset="
+          images-resized/jumbotron/small/desk-cover-small-1152-extra-small-2x.jpg 2x,
+          images-resized/jumbotron/small/desk-cover-small-576-extra-small-1x.jpg 1x">
+      <source
+        srcset="
+          images-resized/jumbotron/large/desk-cover-large-3000-extra-large-2x.jpg 3000w,
+          images-resized/jumbotron/large/desk-cover-large-2400-large-2x.jpg 2400w,
+          images-resized/jumbotron/large/desk-cover-large-1984-medium-2x.jpg 1984w,
+          images-resized/jumbotron/large/desk-cover-large-1536-small-2x.jpg 1536w,
+          images-resized/jumbotron/large/desk-cover-large-1200-large-1x.jpg 1200w,
+          images-resized/jumbotron/large/desk-cover-large-992-medium-1x.jpg 992w,
+          images-resized/jumbotron/large/desk-cover-large-768-small-1x.jpg 768w"
+        sizes="
+          (min-width: 1500px) 1500px,
+          100vw">
+      <img
+        src="images-resized/jumbotron/desk-cover-1-992-medium-1x.jpg"
+        alt="Banner image showing a desk with wireframe drawings, pencils, an eraser, scissors, and a mobile; basically the desk shows the tools of a person planning a website design."
+        class="img-fluid text-center">
+    </picture>
+  </section>
+
+  <!-- Featured Works Section -->
+  <section class="container-fluid">
+    <!-- Heading Section -->
+    <div class="row">
+      <header class="col-12">
+        <h2>Featured Works</h2>
+      </header>
+    </div>
+
+    <!-- Project Overview Cards Section-->
+    <div class="row">
+      <!-- Project 1 Card: Dhakira Montage -->
+      <article class="col-12 col-sm-6 col-md-4">
+        <div class="card bg-transparent border-0">
+          <!-- Image -->
+          <picture>
+            <source
+              srcset="
+                images-resized/card/project001-card-940-extra-small-2x.jpg 940w,
+                images-resized/card/project001-card-545-extra-small-1x.jpg 545w,
+                images-resized/card/project001-card-470-extra-large-1x.jpg 470w,
+                images-resized/card/project001-card-354-small-1x.jpg 354w"
+              sizes="
+                (min-width: 1200px) calc((100vw - 30px*3)/3),
+                (min-width: 992px) calc((100vw - 30px*3)/3),
+                (min-width: 768px) calc((100vw - 30px*2)/2),
+                (min-width: 576px) calc((100vw - 30px*2)/2),
+                calc(100vw - 30px)">
+            <img
+              src="images-resized/card/project001-card-545-extra-small-1x.jpg"
+              alt="Dhakira Montage project thumbnail."
+              class="card-img-top img-fluid rounded-0"
+              data-toggle="modal"
+              data-target="#projectDescriptionModal001">
+          </picture>
+          <!-- Project Title -->
+          <header class="card-header bg-transparent border-0 py-2 text-center">
+            <h3 class="card-title mb-0">Dhakira Montage</h3>
+          </header>
+          <!-- Short Description -->
+          <div class="card-body py-0">
+            <p class="card-text">Creating a web/mobile ecosystem tool to empower natives of heritage sites to record their own heritage.</p>
+            <!-- Tools used -->
+            <p class="card-text"><em>HTML, CSS, JS, Bootstrap, Meteor</em></p>
+          </div>
+          <!-- Links for more info, source code and demo -->
+          <footer class="card-footer bg-transparent border-0 py-3 d-flex justify-content-between align-items-baseline">
+            <button type="button" class=" btn btn-outline-tertiary" data-toggle="modal" data-target="#projectDescriptionModal001">Context</button>
+            <a href="https://github.com/nahilmemon/DhakiraFrontEnd" target="_blank" class="card-link btn btn-outline-tertiary">Code</a>
+            <a href="https://htmlpreview.github.io/?https://github.com/nahilmemon/DhakiraFrontEnd/blob/master/html/homepage.html" target="_blank" class="card-link btn btn-outline-tertiary ml-0">Demo</a>
+          </footer>
+        </div>
+      </article>
+
+      <!-- Project 2 Card: Responsive Images Blog -->
+      <article class="col-12 col-sm-6 col-md-4">
+        <div class="card bg-transparent border-0">
+          <!-- Image -->
+          <picture>
+            <source
+              srcset="
+                images-resized/card/project002-card-940-extra-small-2x.jpg 940w,
+                images-resized/card/project002-card-545-extra-small-1x.jpg 545w,
+                images-resized/card/project002-card-470-extra-large-1x.jpg 470w,
+                images-resized/card/project002-card-354-small-1x.jpg 354w"
+              sizes="
+                (min-width: 1200px) calc((100vw - 30px*3)/3),
+                (min-width: 992px) calc((100vw - 30px*3)/3),
+                (min-width: 768px) calc((100vw - 30px*2)/2),
+                (min-width: 576px) calc((100vw - 30px*2)/2),
+                calc(100vw - 30px)">
+            <img
+              src="images-resized/card/project002-card-545-extra-small-1x.jpg"
+              alt="Responsive Images Blog project thumbnail."
+              class="card-img-top img-fluid rounded-0"
+              data-toggle="modal"
+              data-target="#projectDescriptionModal002">
+          </picture>
+          <!-- Project Title -->
+          <header class="card-header bg-transparent border-0 py-2 text-center">
+            <h3 class="card-title mb-0">Responsive Images Blog</h3>
+          </header>
+          <!-- Short Description -->
+          <div class="card-body py-0">
+            <p class="card-text">Optimizing a photo journal blog’s images for different device widths and pixel density ratios.</p>
+            <!-- Tools used -->
+            <p class="card-text"><em>HTML, CSS</em></p>
+          </div>
+          <!-- Links for more info, source code and demo -->
+          <footer class="card-footer bg-transparent border-0 py-3 d-flex justify-content-between align-items-baseline">
+            <button type="button" class=" btn btn-outline-tertiary" data-toggle="modal" data-target="#projectDescriptionModal002">Context</button>
+            <a href="https://github.com/nahilmemon/responsive-images-blog" target="_blank" class="card-link btn btn-outline-tertiary">Code</a>
+            <a href="https://htmlpreview.github.io/?https://github.com/nahilmemon/responsive-images-blog/blob/master/index.html" target="_blank" class="card-link btn btn-outline-tertiary ml-0">Demo</a>
+          </footer>
+        </div>
+      </article>
+
+      <!-- Project 3 Card: Responsive Resume Site -->
+      <article class="col-12 col-sm-6 col-md-4">
+        <div class="card bg-transparent border-0">
+          <!-- Image -->
+          <picture>
+            <source
+              srcset="
+                images-resized/card/project003-card-940-extra-small-2x.jpg 940w,
+                images-resized/card/project003-card-545-extra-small-1x.jpg 545w,
+                images-resized/card/project003-card-470-extra-large-1x.jpg 470w,
+                images-resized/card/project003-card-354-small-1x.jpg 354w"
+              sizes="
+                (min-width: 1200px) calc((100vw - 30px*3)/3),
+                (min-width: 992px) calc((100vw - 30px*3)/3),
+                (min-width: 768px) calc((100vw - 30px*2)/2),
+                (min-width: 576px) calc((100vw - 30px*2)/2),
+                calc(100vw - 30px)">
+            <img
+              src="images-resized/card/project003-card-545-extra-small-1x.jpg"
+              alt="Responsive Resume Site project thumbnail."
+              class="card-img-top img-fluid rounded-0"
+              data-toggle="modal"
+              data-target="#projectDescriptionModal003">
+          </picture>
+          <!-- Project Title -->
+          <header class="card-header bg-transparent border-0 py-2 text-center">
+            <h3 class="card-title mb-0">Responsive Resume Site</h3>
+          </header>
+          <!-- Short Description -->
+          <div class="card-body py-0">
+            <p class="card-text">Making a fixed width website for a large display become responsive and change layouts for smaller devices.</p>
+            <!-- Tools used -->
+            <p class="card-text"><em>HTML, CSS</em></p>
+          </div>
+          <!-- Links for more info, source code and demo -->
+          <footer class="card-footer bg-transparent border-0 py-3 d-flex justify-content-between align-items-baseline">
+            <button type="button" class=" btn btn-outline-tertiary" data-toggle="modal" data-target="#projectDescriptionModal003">Context</button>
+            <a href="https://github.com/nahilmemon/responsive-resume-site" target="_blank" class="card-link btn btn-outline-tertiary">Code</a>
+            <a href="https://htmlpreview.github.io/?https://github.com/nahilmemon/responsive-resume-site/blob/master/index.html" target="_blank" class="card-link btn btn-outline-tertiary ml-0">Demo</a>
+          </footer>
+        </div>
+      </article>
+
+      <!-- Project 4 Card: Animal Trading Card -->
+      <article class="col-12 col-sm-6 col-md-4">
+        <div class="card bg-transparent border-0">
+          <!-- Image -->
+          <picture>
+            <source
+              srcset="
+                images-resized/card/project004-card-940-extra-small-2x.jpg 940w,
+                images-resized/card/project004-card-545-extra-small-1x.jpg 545w,
+                images-resized/card/project004-card-470-extra-large-1x.jpg 470w,
+                images-resized/card/project004-card-354-small-1x.jpg 354w"
+              sizes="
+                (min-width: 1200px) calc((100vw - 30px*3)/3),
+                (min-width: 992px) calc((100vw - 30px*3)/3),
+                (min-width: 768px) calc((100vw - 30px*2)/2),
+                (min-width: 576px) calc((100vw - 30px*2)/2),
+                calc(100vw - 30px)">
+            <img
+              src="images-resized/card/project004-card-545-extra-small-1x.jpg"
+              alt="Animal Trading Card project thumbnail."
+              class="card-img-top img-fluid rounded-0"
+              data-toggle="modal"
+              data-target="#projectDescriptionModal004">
+          </picture>
+          <!-- Project Title -->
+          <header class="card-header bg-transparent border-0 py-2 text-center">
+            <h3 class="card-title mb-0">Animal Trading Card</h3>
+          </header>
+          <!-- Short Description -->
+          <div class="card-body py-0">
+            <p class="card-text">Adding CSS to an HTML file according to a given design prototype mockup.</p>
+            <!-- Tools used -->
+            <p class="card-text"><em>HTML, CSS</em></p>
+          </div>
+          <!-- Links for more info, source code and demo -->
+          <footer class="card-footer bg-transparent border-0 py-3 d-flex justify-content-between align-items-baseline">
+            <button type="button" class=" btn btn-outline-tertiary" data-toggle="modal" data-target="#projectDescriptionModal004">Context</button>
+            <a href="https://github.com/nahilmemon/animal-trading-card" target="_blank" class="card-link btn btn-outline-tertiary">Code</a>
+            <a href="https://htmlpreview.github.io/?https://github.com/nahilmemon/animal-trading-card/blob/master/card.html" target="_blank" class="card-link btn btn-outline-tertiary ml-0">Demo</a>
+          </footer>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Modals -->
+  <!-- Project 1 Modal: Dhakira Montage -->
+  <article class="modal fade" id="projectDescriptionModal001" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <!-- Header -->
+        <header class="modal-header">
+          <h3 class="modal-title">Dhakira Montage</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </header>
+        <!-- Project Description -->
+        <section class="modal-body">
+          <!-- Problem -->
+          <h4 class="text-bold">Problem</h4>
+          <p>Often, the official story told by UNESCO regarding the heritage of a site is not completely accurate and/or is missing information. The Dhakira Heritage Studies Center is trying to create a tool to enable natives of a heritage site to be able to record their own stories regarding their heritage in the form of text, audio, photos, and/or videos. To do so, this center wanted a website and mobile app ecosystem to provide the tools to record and upload their recordings while also providing a platform for natives to create groups with each other and publish content together as a group regarding particular themes. This web/mobile app would allow members to publish their stories privately, within a group setting, or publicly. This app would also double as a research tool for professors and researchers studying about the heritage of a particular site or region.</p>
+          <!-- Solution -->
+          <h4 class="text-bold">Solution</h4>
+          <p>Working in a small group of three, we decided to create this app using the meteor framework so that it would be easy to create the mobile apps quickly once the website’s development is complete. I was in charge of most of the front-end web development side as well as the branding identity for the Dhakira Heritage Studies Center. The demo and source code links below only show the front-end side of the project. Work is currently underway to connect the front-end and the backend together and the source code can be found <a href="https://github.com/Seongun/DhakiraWebApplication" target="_blank" class="">here</a>.</p>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  images-resized/modal/project001-solution-1-1532-large-2x.png 1532w,
+                  images-resized/modal/project001-solution-1-766-large-1x.png 766w,
+                  images-resized/modal/project001-solution-1-525-extra-small-upper-1x.png 525w,
+                  images-resized/modal/project001-solution-1-466-small-1x.png 466w,
+                  images-resized/modal/project001-solution-1-400-extra-small-lower-1x.png 400w"
+                sizes="
+                  (min-width: 992px) 766px,
+                  (min-width: 576px) 466px,
+                  calc(100vw - 50px)">
+              <img
+                src="images-resized/modal/project001-solution-1-466-small-1x.png"
+                alt="Screenshot of part of the homepage"
+                class="img-fluid text-center">
+            </picture>
+            <figcaption>
+              <p>Screenshot of part of the homepage</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  images-resized/modal/project001-solution-2-1532-large-2x.png 1532w,
+                  images-resized/modal/project001-solution-2-766-large-1x.png 766w,
+                  images-resized/modal/project001-solution-2-525-extra-small-upper-1x.png 525w,
+                  images-resized/modal/project001-solution-2-466-small-1x.png 466w,
+                  images-resized/modal/project001-solution-2-400-extra-small-lower-1x.png 400w"
+                sizes="
+                  (min-width: 992px) 766px,
+                  (min-width: 576px) 466px,
+                  calc(100vw - 50px)">
+              <img
+                src="images-resized/modal/project001-solution-2-466-small-1x.png"
+                alt="Screenshot of the View Posts page"
+                class="img-fluid text-center">
+            </picture>
+            <figcaption>
+              <p>Screenshot of the View Posts page</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  images-resized/modal/project001-solution-3-1532-large-2x.png 1532w,
+                  images-resized/modal/project001-solution-3-766-large-1x.png 766w,
+                  images-resized/modal/project001-solution-3-525-extra-small-upper-1x.png 525w,
+                  images-resized/modal/project001-solution-3-466-small-1x.png 466w,
+                  images-resized/modal/project001-solution-3-400-extra-small-lower-1x.png 400w"
+                sizes="
+                  (min-width: 992px) 766px,
+                  (min-width: 576px) 466px,
+                  calc(100vw - 50px)">
+              <img
+                src="images-resized/modal/project001-solution-3-466-small-1x.png"
+                alt="Screenshot of the advanced search UI"
+                class="img-fluid text-center">
+            </picture>
+            <figcaption>
+              <p>Screenshot of the advanced search UI</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  images-resized/modal/project001-solution-4-1532-large-2x.png 1532w,
+                  images-resized/modal/project001-solution-4-766-large-1x.png 766w,
+                  images-resized/modal/project001-solution-4-525-extra-small-upper-1x.png 525w,
+                  images-resized/modal/project001-solution-4-466-small-1x.png 466w,
+                  images-resized/modal/project001-solution-4-400-extra-small-lower-1x.png 400w"
+                sizes="
+                  (min-width: 992px) 766px,
+                  (min-width: 576px) 466px,
+                  calc(100vw - 50px)">
+              <img
+                src="images-resized/modal/project001-solution-4-466-small-1x.png"
+                alt="Screenshot of the Manage Members page"
+                class="img-fluid text-center">
+            </picture>
+            <figcaption>
+              <p>Screenshot of the Manage Members page</p>
+            </figcaption>
+          </figure>
+        </section>
+        <!-- Footer -->
+        <footer class="modal-footer">
+          <a href="https://github.com/nahilmemon/DhakiraFrontEnd" target="_blank" class="card-link btn btn-outline-tertiary">Code</a>
+          <a href="https://htmlpreview.github.io/?https://github.com/nahilmemon/DhakiraFrontEnd/blob/master/html/homepage.html" target="_blank" class="card-link btn btn-outline-tertiary">Demo</a>
+          <button type="button" class="btn btn-outline-tertiary" data-dismiss="modal">Close</button>
+        </footer>
+      </div>
+    </div>
+  </article>
+
+  <!-- Project 2 Modal: Responsive Images Blog -->
+  <article class="modal fade" id="projectDescriptionModal002" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <!-- Header -->
+        <header class="modal-header">
+          <h3 class="modal-title">Responsive Images Blog</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </header>
+        <!-- Project Description -->
+        <section class="modal-body">
+          <!-- Problem -->
+          <h4 class="text-bold">Problem</h4>
+          <p>In this project, I was given the code for a photo journal style blog which only displayed well on a large screen and had super high resolution images. This made the website</p>
+          <ul>
+            <li>look terrible on smaller devices</li>
+            <li>unnecessarily take very long to load (it would take minutes to load on a slow internet connection)</li>
+          </ul>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  images-resized/modal/project002-problem-1-1532-large-2x.png 1532w,
+                  images-resized/modal/project002-problem-1-766-large-1x.png 766w,
+                  images-resized/modal/project002-problem-1-525-extra-small-upper-1x.png 525w,
+                  images-resized/modal/project002-problem-1-466-small-1x.png 466w,
+                  images-resized/modal/project002-problem-1-400-extra-small-lower-1x.png 400w"
+                sizes="
+                  (min-width: 992px) 766px,
+                  (min-width: 576px) 466px,
+                  calc(100vw - 50px)">
+              <img
+                src="images-resized/modal/project002-problem-1-466-small-1x.png"
+                alt="Screenshot of the blog on a 1500px display"
+                class="img-fluid text-center">
+            </picture>
+            <figcaption>
+              <p>Screenshot of the blog on a 1500px display</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  images-resized/modal/project002-problem-2-1532-large-2x.png 1532w,
+                  images-resized/modal/project002-problem-2-766-large-1x.png 766w,
+                  images-resized/modal/project002-problem-2-525-extra-small-upper-1x.png 525w,
+                  images-resized/modal/project002-problem-2-466-small-1x.png 466w,
+                  images-resized/modal/project002-problem-2-400-extra-small-lower-1x.png 400w"
+                sizes="
+                  (min-width: 992px) 766px,
+                  (min-width: 576px) 466px,
+                  calc(100vw - 50px)">
+              <img
+                src="images-resized/modal/project002-problem-2-466-small-1x.png"
+                alt="Screenshot of the blog on an Apple iPad"
+                class="img-fluid text-center">
+            </picture>
+            <figcaption>
+              <p>Screenshot of the blog on an Apple iPad</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  images-resized/modal/project002-problem-3-1532-large-2x.png 1532w,
+                  images-resized/modal/project002-problem-3-766-large-1x.png 766w,
+                  images-resized/modal/project002-problem-3-525-extra-small-upper-1x.png 525w,
+                  images-resized/modal/project002-problem-3-466-small-1x.png 466w,
+                  images-resized/modal/project002-problem-3-400-extra-small-lower-1x.png 400w"
+                sizes="
+                  (min-width: 992px) 766px,
+                  (min-width: 576px) 466px,
+                  calc(100vw - 50px)">
+              <img
+                src="images-resized/modal/project002-problem-3-466-small-1x.png"
+                alt="Screenshot of the blog on Google Nexus 5"
+                class="img-fluid text-center">
+            </picture>
+            <figcaption>
+              <p>Screenshot of the blog on Google Nexus 5</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  images-resized/modal/project002-problem-4-1532-large-2x.png 1532w,
+                  images-resized/modal/project002-problem-4-766-large-1x.png 766w,
+                  images-resized/modal/project002-problem-4-525-extra-small-upper-1x.png 525w,
+                  images-resized/modal/project002-problem-4-466-small-1x.png 466w,
+                  images-resized/modal/project002-problem-4-400-extra-small-lower-1x.png 400w"
+                sizes="
+                  (min-width: 992px) 766px,
+                  (min-width: 576px) 466px,
+                  calc(100vw - 50px)">
+              <img
+                src="images-resized/modal/project002-problem-4-466-small-1x.png"
+                alt="Screenshot of the flourish and footer"
+                class="img-fluid text-center">
+            </picture>
+            <figcaption>
+              <p>Screenshot of the flourish and footer</p>
+            </figcaption>
+          </figure>
+          <!-- Solution -->
+          <h4 class="text-bold">Solution</h4>
+          <p>I optimized the website so that it would load much faster by:</p>
+          <ul>
+            <li>Using Grunt and the grunt-responsive-images plugin to create different sizes of each image and at a lower quality</li>
+            <li>Using the picture element with multiple sources so that the browser can decide at runtime which image size to use depending the size of the browser, the size that the image needed to be displayed at, and the pixel density ratio of the user’s devices</li>
+            <li>Using the Zocial font icon to display social media links</li>
+            <li>Using UTF characters instead of PNG files to display emoticons</li>
+            <li>Using an inline SVG element for the logo</li>
+            <li>Using a border instead of the flourish image file</li>
+          </ul>
+          <p>Other ways I tried to improve the website included:</p>
+          <ul>
+            <li>Using HTML semantic elements</li>
+            <li>Placing each image in a figure element and giving each image a figcaption and an alt tag so that those using a screen reader or a text based browser could still understand what was in the images</li>
+            <li>Using art direction and tighter crops of some of the images so that they could display better on smaller devices</li>
+            <li>Making the images resize automatically based on the browser width</li>
+            <li>Increase the padding on the links for smaller devices so that they are easier to touch accurately with fingers</li>
+            <li>Add some Google Fonts and a color palette</li>
+          </ul>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  images-resized/modal/project002-solution-1-1532-large-2x.png 1532w,
+                  images-resized/modal/project002-solution-1-766-large-1x.png 766w,
+                  images-resized/modal/project002-solution-1-525-extra-small-upper-1x.png 525w,
+                  images-resized/modal/project002-solution-1-466-small-1x.png 466w,
+                  images-resized/modal/project002-solution-1-400-extra-small-lower-1x.png 400w"
+                sizes="
+                  (min-width: 992px) 766px,
+                  (min-width: 576px) 466px,
+                  calc(100vw - 50px)">
+              <img
+                src="images-resized/modal/project002-solution-1-466-small-1x.png"
+                alt="Screenshot of my version of the blog on a 1500px display"
+                class="img-fluid text-center">
+            </picture>
+            <figcaption>
+              <p>Screenshot of my version of the blog on a 1500px display</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  images-resized/modal/project002-solution-2-1532-large-2x.png 1532w,
+                  images-resized/modal/project002-solution-2-766-large-1x.png 766w,
+                  images-resized/modal/project002-solution-2-525-extra-small-upper-1x.png 525w,
+                  images-resized/modal/project002-solution-2-466-small-1x.png 466w,
+                  images-resized/modal/project002-solution-2-400-extra-small-lower-1x.png 400w"
+                sizes="
+                  (min-width: 992px) 766px,
+                  (min-width: 576px) 466px,
+                  calc(100vw - 50px)">
+              <img
+                src="images-resized/modal/project002-solution-2-466-small-1x.png"
+                alt="Screenshot of my version of the blog on an Apple iPad"
+                class="img-fluid text-center">
+            </picture>
+            <figcaption>
+              <p>Screenshot of my version of the blog on an Apple iPad</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  images-resized/modal/project002-solution-3-1532-large-2x.png 1532w,
+                  images-resized/modal/project002-solution-3-766-large-1x.png 766w,
+                  images-resized/modal/project002-solution-3-525-extra-small-upper-1x.png 525w,
+                  images-resized/modal/project002-solution-3-466-small-1x.png 466w,
+                  images-resized/modal/project002-solution-3-400-extra-small-lower-1x.png 400w"
+                sizes="
+                  (min-width: 992px) 766px,
+                  (min-width: 576px) 466px,
+                  calc(100vw - 50px)">
+              <img
+                src="images-resized/modal/project002-solution-3-466-small-1x.png"
+                alt="Screenshot of my version of the blog on a Google Nexus 5"
+                class="img-fluid text-center">
+            </picture>
+            <figcaption>
+              <p>Screenshot of my version of the blog on a Google Nexus 5</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  images-resized/modal/project002-solution-4-1532-large-2x.png 1532w,
+                  images-resized/modal/project002-solution-4-766-large-1x.png 766w,
+                  images-resized/modal/project002-solution-4-525-extra-small-upper-1x.png 525w,
+                  images-resized/modal/project002-solution-4-466-small-1x.png 466w,
+                  images-resized/modal/project002-solution-4-400-extra-small-lower-1x.png 400w"
+                sizes="
+                  (min-width: 992px) 766px,
+                  (min-width: 576px) 466px,
+                  calc(100vw - 50px)">
+              <img
+                src="images-resized/modal/project002-solution-4-466-small-1x.png"
+                alt="Screenshot of the footer on a 1500px display"
+                class="img-fluid text-center">
+            </picture>
+            <figcaption>
+              <p>Screenshot of the footer on a 1500px display</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  images-resized/modal/project002-solution-5-1532-large-2x.png 1532w,
+                  images-resized/modal/project002-solution-5-766-large-1x.png 766w,
+                  images-resized/modal/project002-solution-5-525-extra-small-upper-1x.png 525w,
+                  images-resized/modal/project002-solution-5-466-small-1x.png 466w,
+                  images-resized/modal/project002-solution-5-400-extra-small-lower-1x.png 400w"
+                sizes="
+                  (min-width: 992px) 766px,
+                  (min-width: 576px) 466px,
+                  calc(100vw - 50px)">
+              <img
+                src="images-resized/modal/project002-solution-5-466-small-1x.png"
+                alt="Screenshot of the footer and a tighter crop of the Rosella photo on a Google Nexus 5"
+                class="img-fluid text-center">
+            </picture>
+            <figcaption>
+              <p>Screenshot of the footer and a tighter crop of the Rosella photo on a Google Nexus 5</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  images-resized/modal/project002-solution-6-1532-large-2x.png 1532w,
+                  images-resized/modal/project002-solution-6-766-large-1x.png 766w,
+                  images-resized/modal/project002-solution-6-525-extra-small-upper-1x.png 525w,
+                  images-resized/modal/project002-solution-6-466-small-1x.png 466w,
+                  images-resized/modal/project002-solution-6-400-extra-small-lower-1x.png 400w"
+                sizes="
+                  (min-width: 992px) 766px,
+                  (min-width: 576px) 466px,
+                  calc(100vw - 50px)">
+              <img
+                src="images-resized/modal/project002-solution-6-466-small-1x.png"
+                alt="Screenshot demonstrating the image resizing to not go beyond the height of the device"
+                class="img-fluid text-center">
+            </picture>
+            <figcaption>
+              <p>Screenshot demonstrating the image resizing to not go beyond the height of the device</p>
+            </figcaption>
+          </figure>
+        </section>
+        <!-- Footer -->
+        <footer class="modal-footer">
+          <a href="https://github.com/nahilmemon/responsive-images-blog" target="_blank" class="card-link btn btn-outline-tertiary">Code</a>
+          <a href="https://htmlpreview.github.io/?https://github.com/nahilmemon/responsive-images-blog/blob/master/index.html" target="_blank" class="card-link btn btn-outline-tertiary">Demo</a>
+          <button type="button" class="btn btn-outline-tertiary" data-dismiss="modal">Close</button>
+        </footer>
+      </div>
+    </div>
+  </article>
+
+  <!-- Project 3 Modal: Responsive Resume Site -->
+  <article class="modal fade" id="projectDescriptionModal003" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <!-- Header -->
+        <header class="modal-header">
+          <h3 class="modal-title">Responsive Resume Site</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </header>
+        <!-- Project Description -->
+        <section class="modal-body">
+          <!-- Problem -->
+          <h4 class="text-bold">Problem</h4>
+          <p>For this project, I was given the code for a resume site for a hypothetical client. This site was designed to only display nicely on a 1926px wide browser. On smaller devices, most of the content would get covered up or go off screen and the text was also very small.</p>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  images-resized/modal/project003-problem-1-1532-large-2x.png 1532w,
+                  images-resized/modal/project003-problem-1-766-large-1x.png 766w,
+                  images-resized/modal/project003-problem-1-525-extra-small-upper-1x.png 525w,
+                  images-resized/modal/project003-problem-1-466-small-1x.png 466w,
+                  images-resized/modal/project003-problem-1-400-extra-small-lower-1x.png 400w"
+                sizes="
+                  (min-width: 992px) 766px,
+                  (min-width: 576px) 466px,
+                  calc(100vw - 50px)">
+              <img
+                src="images-resized/modal/project003-problem-1-466-small-1x.png"
+                alt="Screenshot of the website on a 1926px wide display"
+                class="img-fluid text-center">
+            </picture>
+            <figcaption>
+              <p>Screenshot of the website on a 1926px wide display</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  images-resized/modal/project003-problem-2-1532-large-2x.png 1532w,
+                  images-resized/modal/project003-problem-2-766-large-1x.png 766w,
+                  images-resized/modal/project003-problem-2-525-extra-small-upper-1x.png 525w,
+                  images-resized/modal/project003-problem-2-466-small-1x.png 466w,
+                  images-resized/modal/project003-problem-2-400-extra-small-lower-1x.png 400w"
+                sizes="
+                  (min-width: 992px) 766px,
+                  (min-width: 576px) 466px,
+                  calc(100vw - 50px)">
+              <img
+                src="images-resized/modal/project003-problem-2-466-small-1x.png"
+                alt="Screenshot of the website on an Apple iPad"
+                class="img-fluid text-center">
+            </picture>
+            <figcaption>
+              <p>Screenshot of the website on an Apple iPad</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  images-resized/modal/project003-problem-3-1532-large-2x.png 1532w,
+                  images-resized/modal/project003-problem-3-766-large-1x.png 766w,
+                  images-resized/modal/project003-problem-3-525-extra-small-upper-1x.png 525w,
+                  images-resized/modal/project003-problem-3-466-small-1x.png 466w,
+                  images-resized/modal/project003-problem-3-400-extra-small-lower-1x.png 400w"
+                sizes="
+                  (min-width: 992px) 766px,
+                  (min-width: 576px) 466px,
+                  calc(100vw - 50px)">
+              <img
+                src="images-resized/modal/project003-problem-3-466-small-1x.png"
+                alt="Screenshot of the website on a Google Nexus 5 mobile"
+                class="img-fluid text-center">
+            </picture>
+            <figcaption>
+              <p>Screenshot of the website on a Google Nexus 5 mobile</p>
+            </figcaption>
+          </figure>
+          <!-- Solution -->
+          <h4 class="text-bold">Solution</h4>
+          <p>I made the site more responsive by:</p>
+          <ul>
+            <li>Adding the viewport meta tag so that the viewport’s device-width is set properly</li>
+            <li>Changing the layout of the site based on the device dimensions so that the content is rearranged into fewer columns and/or hidden</li>
+            <li>Changing all fixed pixel width dimensions for the page contents into percent widths</li>
+            <li>Changing the font sizes, line heights, and margins based on the device dimensions</li>
+            <li>Vertically aligning the intro text responsively based on the page height instead of with a fixed margin-top</li>
+          </ul>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  images-resized/modal/project003-solution-1-1532-large-2x.png 1532w,
+                  images-resized/modal/project003-solution-1-766-large-1x.png 766w,
+                  images-resized/modal/project003-solution-1-525-extra-small-upper-1x.png 525w,
+                  images-resized/modal/project003-solution-1-466-small-1x.png 466w,
+                  images-resized/modal/project003-solution-1-400-extra-small-lower-1x.png 400w"
+                sizes="
+                  (min-width: 992px) 766px,
+                  (min-width: 576px) 466px,
+                  calc(100vw - 50px)">
+              <img
+                src="images-resized/modal/project003-solution-1-466-small-1x.png"
+                alt="Screenshot of my version of the website on a 1500px wide display"
+                class="img-fluid text-center">
+            </picture>
+            <figcaption>
+              <p>Screenshot of my version of the website on a 1500px wide display</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  images-resized/modal/project003-solution-2-1532-large-2x.png 1532w,
+                  images-resized/modal/project003-solution-2-766-large-1x.png 766w,
+                  images-resized/modal/project003-solution-2-525-extra-small-upper-1x.png 525w,
+                  images-resized/modal/project003-solution-2-466-small-1x.png 466w,
+                  images-resized/modal/project003-solution-2-400-extra-small-lower-1x.png 400w"
+                sizes="
+                  (min-width: 992px) 766px,
+                  (min-width: 576px) 466px,
+                  calc(100vw - 50px)">
+              <img
+                src="images-resized/modal/project003-solution-2-466-small-1x.png"
+                alt="Screenshot of my version of the website on an Apple iPad"
+                class="img-fluid text-center">
+            </picture>
+            <figcaption>
+              <p>Screenshot of my version of the website on an Apple iPad</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  images-resized/modal/project003-solution-3-1532-large-2x.png 1532w,
+                  images-resized/modal/project003-solution-3-766-large-1x.png 766w,
+                  images-resized/modal/project003-solution-3-525-extra-small-upper-1x.png 525w,
+                  images-resized/modal/project003-solution-3-466-small-1x.png 466w,
+                  images-resized/modal/project003-solution-3-400-extra-small-lower-1x.png 400w"
+                sizes="
+                  (min-width: 992px) 766px,
+                  (min-width: 576px) 466px,
+                  calc(100vw - 50px)">
+              <img
+                src="images-resized/modal/project003-solution-3-466-small-1x.png"
+                alt="Screenshot of my version of the website on a Google Nexus 5 mobile"
+                class="img-fluid text-center">
+            </picture>
+            <figcaption>
+              <p>Screenshot of my version of the website on a Google Nexus 5 mobile</p>
+            </figcaption>
+          </figure>
+        </section>
+        <!-- Footer -->
+        <footer class="modal-footer">
+          <a href="https://github.com/nahilmemon/responsive-resume-site" target="_blank" class="card-link btn btn-outline-tertiary">Code</a>
+          <a href="https://htmlpreview.github.io/?https://github.com/nahilmemon/responsive-resume-site/blob/master/index.html" target="_blank" class="card-link btn btn-outline-tertiary">Demo</a>
+          <button type="button" class="btn btn-outline-tertiary" data-dismiss="modal">Close</button>
+        </footer>
+      </div>
+    </div>
+  </article>
+
+  <!-- Project 4 Modal: Animal Trading Card -->
+  <article class="modal fade" id="projectDescriptionModal004" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <!-- Header -->
+        <header class="modal-header">
+          <h3 class="modal-title">Animal Trading Card</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </header>
+        <!-- Project Description -->
+        <section class="modal-body">
+          <!-- Problem -->
+          <h4 class="text-bold">Problem</h4>
+          <p>In this project, I was given the basic HTML for making an animal trading card. I was also given a design prototype mockup and had to add some CSS to the HTML in order to imitate the mockup. Afterwards, I was told to add some extra styling and content to make the card unique.</p>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  images-resized/modal/project004-problem-1-1532-large-2x.png 1532w,
+                  images-resized/modal/project004-problem-1-766-large-1x.png 766w,
+                  images-resized/modal/project004-problem-1-525-extra-small-upper-1x.png 525w,
+                  images-resized/modal/project004-problem-1-466-small-1x.png 466w,
+                  images-resized/modal/project004-problem-1-400-extra-small-lower-1x.png 400w"
+                sizes="
+                  (min-width: 992px) 766px,
+                  (min-width: 576px) 466px,
+                  calc(100vw - 50px)">
+              <img
+                src="images-resized/modal/project004-problem-1-466-small-1x.png"
+                alt="Screenshot of rendering of HTML given"
+                class="img-fluid text-center">
+            </picture>
+            <figcaption>
+              <p>Screenshot of rendering of HTML given</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  images-resized/modal/project004-problem-2-1532-large-2x.png 1532w,
+                  images-resized/modal/project004-problem-2-766-large-1x.png 766w,
+                  images-resized/modal/project004-problem-2-525-extra-small-upper-1x.png 525w,
+                  images-resized/modal/project004-problem-2-466-small-1x.png 466w,
+                  images-resized/modal/project004-problem-2-400-extra-small-lower-1x.png 400w"
+                sizes="
+                  (min-width: 992px) 766px,
+                  (min-width: 576px) 466px,
+                  calc(100vw - 50px)">
+              <img
+                src="images-resized/modal/project004-problem-2-466-small-1x.png"
+                alt="Design prototype mockup given"
+                class="img-fluid text-center">
+            </picture>
+            <figcaption>
+              <p>Design prototype mockup given</p>
+            </figcaption>
+          </figure>
+          <!-- Solution -->
+          <h4 class="text-bold">Solution</h4>
+          <figure>
+            <picture>
+              <source
+                srcset="
+                  images-resized/modal/project004-solution-1-1532-large-2x.jpg 1532w,
+                  images-resized/modal/project004-solution-1-766-large-1x.jpg 766w,
+                  images-resized/modal/project004-solution-1-525-extra-small-upper-1x.jpg 525w,
+                  images-resized/modal/project004-solution-1-466-small-1x.jpg 466w,
+                  images-resized/modal/project004-solution-1-400-extra-small-lower-1x.jpg 400w"
+                sizes="
+                  (min-width: 992px) 766px,
+                  (min-width: 576px) 466px,
+                  calc(100vw - 50px)">
+              <img
+                src="images-resized/modal/project004-solution-1-466-small-1x.jpg"
+                alt="Screenshot of my version of the styled animal trading card"
+                class="img-fluid text-center">
+            </picture>
+            <figcaption>
+              <p>Screenshot of my version of the styled animal trading card</p>
+            </figcaption>
+          </figure>
+        </section>
+        <!-- Footer -->
+        <footer class="modal-footer">
+          <a href="https://github.com/nahilmemon/animal-trading-card" target="_blank" class="card-link btn btn-outline-tertiary">Code</a>
+          <a href="https://htmlpreview.github.io/?https://github.com/nahilmemon/animal-trading-card/blob/master/card.html" target="_blank" class="card-link btn btn-outline-tertiary">Demo</a>
+          <button type="button" class="btn btn-outline-tertiary" data-dismiss="modal">Close</button>
+        </footer>
+      </div>
+    </div>
+  </article>
+  <!-- JavaScript Links-->
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
